@@ -1,0 +1,38 @@
+.menu{
+  padding: 10px;
+  width: 100vw;
+  max-height: 120px;
+  min-height: 30px;
+  display: flex;
+  flex-direction: row;
+  z-index: 999;
+  background-color: white;
+}
+
+.menu-logo-img{
+  height: 50px;
+  width: auto;
+}
+
+.menu-links{
+  margin-right: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-element{
+  display: inline-block;
+  margin: 17px;
+  font-size: 17px;
+}
+
+.menu-element > a:hover{
+  color: #aac85b;
+}
+
+.mobile-menu{
+  min-height: 350px;
+}

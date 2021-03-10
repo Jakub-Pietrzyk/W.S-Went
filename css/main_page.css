@@ -1,0 +1,191 @@
+/* banner */
+
+.main-banner{
+  background-image: url("../images/banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  position: relative;
+  width: 100vw;
+  height: 600px;
+
+  text-align: center;
+  color: white;
+}
+
+.main-banner::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.3;
+  z-index: 1;
+
+  animation-name: animateBannerBackground;
+  animation-duration: 2.5s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.banner-text{
+  z-index: 3;
+  position: relative;
+  padding: 10%;
+
+  animation-name: animateBannerText;
+  animation-duration: 2s;
+}
+
+.banner-text > h1{
+  font-size: 70px;
+}
+
+.banner-text > p{
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+/* advantages */
+
+.advantages-cont{
+  width: 100vw;
+  text-align: center;
+  padding: 70px 0;
+}
+
+.advantages-descriptions > h4 {
+  font-size: 40px;
+}
+
+.advantages-descriptions > p {
+  font-size: 18px;
+  margin: 20px 0 50px 0;
+}
+
+.advantages-tiles{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.advantage-tile{
+  width: 20%;
+  background-color: white;
+  margin: 50px;
+}
+
+.tile-icon > i{
+    color: #aac85b;
+    font-size: 80px;
+    margin: 40px 40px 20px 40px;
+}
+
+.tile-text{
+  margin: 30px 20px;
+}
+
+.tile-header{
+  margin: 0 10px;
+  font-size: 22px;
+}
+
+.tile-description{
+  margin: 20px 0px 50px 0px;
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+/* description */
+
+.description-cont{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 100px 70px;
+}
+
+.description-cont > p{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  font-size: 15px;
+}
+
+.description-cont > h3{
+  width: 80%;
+  margin: 0 auto 40px auto;
+  font-size: 40px;
+}
+
+.description-cont > h5{
+  width: 80%;
+  margin: 30px auto;
+  font-size: 25px;
+}
+
+/* learn-more */
+
+.learn-more-cont{
+  text-align: center;
+  padding: 80px;
+}
+
+.learn-more-title{
+  font-size: 35px;
+}
+
+.learn-more-description{
+  font-size: 17px;
+  margin: 30px 0 40px 0;
+}
+
+.recuperation-cont{
+  background-color: white;
+  width: 450px;
+  margin: 70px auto 20px auto;
+  padding: 30px;
+  min-height: 270px;
+  text-align: left;
+}
+
+.recuperation-cont > h2{
+  margin: 20px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.recuperation-cont > p{
+  text-align: left;
+  font-size: 15px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+a.read-more-button{
+  border: 1px solid black;
+  padding: 14px;
+  border-radius: 8px;
+  margin: 20px 10px;
+}
+
+a.read-more-button:hover{
+  background-color: #aac85b;
+  border-color: #aac85b;
+  color: white;
+}
+
+/* animations */
+
+@keyframes animateBannerBackground {
+  from {opacity: 1;}
+  to {opacity: 0.3;}
+}
+
+@keyframes animateBannerText {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
