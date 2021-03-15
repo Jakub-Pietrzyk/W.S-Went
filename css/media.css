@@ -47,11 +47,8 @@
     width: 100%;
     position: absolute;
     bottom: 5px;
+    left: 0;
     flex-direction: column;
-  }
-
-  .menu-links.ml-auto{
-    margin: 10px;
   }
 
   .menu-element{
