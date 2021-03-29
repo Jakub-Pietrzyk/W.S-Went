@@ -1,0 +1,4 @@
+sitemap: https://jakub-pietrzyk.github.io/W.S-Went/sitemap.xml
+
+User-Agent: *
+Disallow: 
