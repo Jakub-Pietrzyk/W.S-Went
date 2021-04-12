@@ -141,4 +141,8 @@
     font-size: 25px;
   }
 
+  .brand{
+    cursor: pointer;
+  }
+
 }
